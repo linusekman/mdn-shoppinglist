@@ -39,6 +39,12 @@
       button.addEventListener("click", () => {
         const item = input.value;
 
+        if (input.value !== "") {
+          input.value = "";
+        } else {
+          return;
+        }
+
       const listItem = document.createElement("li");
       const listText = document.createElement("span");
       const listButton = document.createElement("button");
